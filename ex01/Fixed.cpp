@@ -6,7 +6,7 @@
 /*   By: yuliano <yuliano@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 17:49:44 by yuliano           #+#    #+#             */
-/*   Updated: 2026/01/02 13:41:49 by yuliano          ###   ########.fr       */
+/*   Updated: 2026/01/02 21:20:50 by yuliano          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ Fixed::Fixed(const int num)
 
 Fixed::Fixed(const float num)
 {
+	std::cout<<"float constructor called\n";
 	Raw = roundf(num * (1 << bits));
 }
 
